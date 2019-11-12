@@ -23,7 +23,7 @@ namespace abonlinesolutions\profitwell_php_api;
  * @subpackage Common
  * @author     Matthew Raymer <matthew.raymer@anomalistdesign.com>
  */
-class ProfitWell_PHP_API
+class API
 {
 
     /*
