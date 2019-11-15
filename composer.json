@@ -1,5 +1,11 @@
 {
     "name": "abonlinesolutions/profitwell-php-api",
     "description": "ProfitWell PHP API",
-    "require": {}
+    "require": {},
+
+    "autoload": {
+      "psr-4": {
+        "abonlinesolutions\\profitwell_php_api\\": "src/"
+      }
+    }
 }
