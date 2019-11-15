@@ -45,6 +45,8 @@ class API {
     private $_value = "";
     private $_effective_date = "";
 
+    private $debug = false;
+
     /**
      * API constructor.
      * @param string $key
@@ -545,6 +547,10 @@ class API {
             "Authorization: " . $this->_api_key
         ));
         $response = curl_exec( $ch );
+        if($this->debug) {
+            echo "ProfitWell request : || $url || \n";
+            echo "ProfitWell response : || $response || \n";
+        }
         curl_close( $ch );
         $this->_response = $response;
 
